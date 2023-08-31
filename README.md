@@ -1,2 +1,2 @@
-# Proyecto-2-moovies
-Tema del proyecto: moovies. Grupo 2
+# Proyecto-2-movies
+Tema del proyecto: movies. Grupo 2
