@@ -1,9 +1,290 @@
 {
   "películas-destacadas": [
-    { "id": 1, "title": "el Menú", "category": "suspenso", "año": 2022 }
+    {
+      "id": 1,
+      "title": "el Menú",
+      "category": "suspenso",
+      "año": 2022,
+      "img": "./img/películas_destacadas/the-menu"
+    },
+    {
+      "id": 2,
+      "title": "Mi novia Polly",
+      "category": "comedia",
+      "año": 2014,
+      "img": ""
+    },
+    {
+      "id": 3,
+      "title": "Ámsterdan",
+      "category": "drama",
+      "año": 2022,
+      "img": ""
+    },
+    {
+      "id": 4,
+      "title": "El visitante",
+      "category": "terror",
+      "año": 2022,
+      "img": ""
+    },
+    {
+      "id": 5,
+      "title": "Asfixiados",
+      "category": "romance",
+      "año": 2023,
+      "img": ""
+    },
+    {
+      "id": 6,
+      "title": "Babylon",
+      "category": "comedia",
+      "año": 2022,
+      "img": ""
+    },
+    {
+      "id": 7,
+      "title": "30 noches con mi ex",
+      "category": "romance",
+      "año": 2022,
+      "img": ""
+    },
+    {
+      "id": 8,
+      "title": "La forma del agua",
+      "category": "drama",
+      "año": 2017,
+      "img": ""
+    },
+    {
+      "id": 9,
+      "title": "John Lennon",
+      "category": "documental",
+      "año": 2020,
+      "img": ""
+    },
+    {
+      "id": 10,
+      "title": "Allien",
+      "category": "ciencia ficción",
+      "año": 1992,
+      "img": ""
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "ciencia-ficción": [
+    {
+      "id": 1,
+      "title": "Matrix",
+      "category": "ciencia ficción",
+      "año": 1999,
+      "img": ""
+    },
+    {
+      "id": 2,
+      "title": "Metropolis",
+      "category": "ciencia ficción",
+      "año": 1927,
+      "img": ""
+    },
+    {
+      "id": 3,
+      "title": "El planeta de los simios",
+      "category": "ciencia ficción",
+      "año": 1968,
+      "img": ""
+    },
+    {
+      "id": 4,
+      "title": "El depredador",
+      "category": "ciencia ficción",
+      "año": 2018,
+      "img": ""
+    },
+    {
+      "id": 5,
+      "title": "Allien",
+      "category": "ciencia ficción",
+      "año": 1992,
+      "img": ""
+    },
+    {
+      "id": 6,
+      "title": "Hombres de negro III",
+      "category": "ciencia ficción",
+      "año": 2012,
+      "img": ""
+    },
+    {
+      "id": 7,
+      "title": "Armagedon",
+      "category": "ciencia ficción",
+      "año": 1998,
+      "img": ""
+    },
+    {
+      "id": 8,
+      "title": "Animal",
+      "category": "ciencia ficción",
+      "año": 2001,
+      "img": ""
+    },
+    {
+      "id": 9,
+      "title": "Mente poderosa",
+      "category": "ciencia ficción",
+      "año": 2018,
+      "img": ""
+    },
+    {
+      "id": 10,
+      "title": "La torre oscura",
+      "category": "ciencia ficción",
+      "año": 2017,
+      "img": ""
+    }
   ],
-  "profile": { "name": "typicode" }
+  "romance": [
+    {
+      "id": 1,
+      "title": "Comer, rezar, amar",
+      "category": "romance",
+      "año": 2010,
+      "img": ""
+    },
+    {
+      "id": 2,
+      "title": "Recién casados",
+      "category": "romance",
+      "año": 2003,
+      "img": ""
+    },
+    {
+      "id": 3,
+      "title": "La la land",
+      "category": "romance",
+      "año": 2016,
+      "img": ""
+    },
+    {
+      "id": 4,
+      "title": "La teoría del todo",
+      "category": "romance",
+      "año": 2014,
+      "img": ""
+    },
+    {
+      "id": 5,
+      "title": "Una noche de amor",
+      "category": "romance",
+      "año": 2016,
+      "img": ""
+    },
+    {
+      "id": 6,
+      "title": "Titanic",
+      "category": "romance",
+      "año": 1997,
+      "img": ""
+    },
+    {
+      "id": 7,
+      "title": "La propuesta",
+      "category": "romance",
+      "año": 2009,
+      "img": ""
+    },
+    {
+      "id": 8,
+      "title": "Sin hijos",
+      "category": "romance",
+      "año": 2015,
+      "img": ""
+    },
+    {
+      "id": 9,
+      "title": "Amigos con derecho",
+      "category": "romance",
+      "año": 2011,
+      "img": ""
+    },
+    {
+      "id": 10,
+      "title": "De amor y otras adicciones",
+      "category": "romance",
+      "año": 2010,
+      "img": ""
+    }
+  ],
+  "comedia": [
+    {
+      "id": 1,
+      "title": "Birdman",
+      "category": "comedia",
+      "año": 2014,
+      "img": ""
+    },
+    {
+      "id": 2,
+      "title": "De ladrón a policía",
+      "category": "comedia",
+      "año": 1999,
+      "img": ""
+    },
+    {
+      "id": 3,
+      "title": "Un cuento chino",
+      "category": "comedia",
+      "año": 2011,
+      "img": ""
+    },
+    {
+      "id": 4,
+      "title": "Pelotas em juego",
+      "category": "comedia",
+      "año": 2004,
+      "img": ""
+    },
+    {
+      "id": 5,
+      "title": "La crónica francesa",
+      "category": "comedia",
+      "año": 2021,
+      "img": ""
+    },
+    {
+      "id": 6,
+      "title": "El robo del siglo",
+      "category": "comedia",
+      "año": 2020,
+      "img": ""
+    },
+    {
+      "id": 7,
+      "title": "Mentiroso, mentiroso",
+      "category": "comedia",
+      "año": 1997,
+      "img": ""
+    },
+    {
+      "id": 8,
+      "title": "Los pequeños Focker",
+      "category": "comedia",
+      "año": 2010,
+      "img": ""
+    },
+    {
+      "id": 9,
+      "title": "Sentimental",
+      "category": "comedia",
+      "año": 2020,
+      "img": ""
+    },
+    {
+      "id": 10,
+      "title": "Casi leyendas",
+      "category": "comedia",
+      "año": 2017,
+      "img": ""
+    }
+  ]
 }
