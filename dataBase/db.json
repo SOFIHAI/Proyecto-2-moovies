@@ -1,74 +1,75 @@
 {
-  "películas-destacadas": [
+  "destacadas": [
+    
     {
       "id": 1,
-      "title": "el Menú",
-      "category": "suspenso",
-      "año": 2022,
-      "img": "./img/películas_destacadas/the-menu"
+      "title": "Cinema paradiso",
+      "category": "drama",
+      "año": 1988,
+      "img": "../img/películas_destacadas/cinema paradiso.jpg"
     },
     {
       "id": 2,
-      "title": "Mi novia Polly",
-      "category": "comedia",
-      "año": 2014,
-      "img": ""
+      "title": "El padrino",
+      "category": "drama",
+      "año": 1972,
+      "img": "../img/películas_destacadas/el padrino.jpg"
     },
     {
       "id": 3,
-      "title": "Ámsterdan",
-      "category": "drama",
-      "año": 2022,
-      "img": ""
+      "title": "El caballero oscuro",
+      "category": "accion",
+      "año": 2008,
+      "img": "../img/películas_destacadas/elcaballero-oscuro.jpg"
     },
     {
       "id": 4,
-      "title": "El visitante",
-      "category": "terror",
-      "año": 2022,
-      "img": ""
+      "title": "El señor de los anillos",
+      "category": "accion",
+      "año": 2004,
+      "img": "../img/películas_destacadas/elseñor de los anillos.jpg"
     },
     {
       "id": 5,
-      "title": "Asfixiados",
-      "category": "romance",
-      "año": 2023,
-      "img": ""
+      "title": "Interestelar",
+      "category": "accion",
+      "año": 2014,
+      "img": "../img/películas_destacadas/interestelar.jpg"
     },
     {
       "id": 6,
-      "title": "Babylon",
-      "category": "comedia",
-      "año": 2022,
-      "img": ""
+      "title": "Joker",
+      "category": "drama",
+      "año": 2019,
+      "img": "../img/películas_destacadas/joker.jpg"
     },
     {
       "id": 7,
-      "title": "30 noches con mi ex",
-      "category": "romance",
-      "año": 2022,
-      "img": ""
+      "title": "La vida es Bella",
+      "category": "drama",
+      "año": 1997,
+      "img": "../img/películas_destacadas/la vida es bella.jpg"
     },
     {
       "id": 8,
-      "title": "La forma del agua",
-      "category": "drama",
-      "año": 2017,
-      "img": ""
+      "title": "Uno de los nuestros",
+      "category": "accion",
+      "año": 1990,
+      "img": "../img/películas_destacadas/uno de los nuestros.jpg"
     },
     {
       "id": 9,
-      "title": "John Lennon",
-      "category": "documental",
-      "año": 2020,
-      "img": ""
+      "title": "Parasitos",
+      "category": "drama",
+      "año": 2019,
+      "img": "../img/películas_destacadas/parasitos.jpg"
     },
     {
       "id": 10,
-      "title": "Allien",
-      "category": "ciencia ficción",
-      "año": 1992,
-      "img": ""
+      "title": "Psicosis",
+      "category": "drama",
+      "año": 2020,
+      "img": "../img/películas_destacadas/psicosis.jpg"
     }
   ],
   "ciencia-ficción": [
@@ -286,5 +287,6 @@
       "año": 2017,
       "img": ""
     }
+  
   ]
 }
