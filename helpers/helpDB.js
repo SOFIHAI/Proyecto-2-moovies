@@ -9,9 +9,9 @@ async function obtenerInformacion  () {
     console.error('Error al cargar el archivo JSON:', error);
   });
   
+  
   return informacion;
   } 
-  
   export  {
     obtenerInformacion,
   }
