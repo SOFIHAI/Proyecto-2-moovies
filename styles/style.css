@@ -25,7 +25,7 @@ nav {
   font-size: 16px;
   min-height: 40.62em;
   color: #fff;
-  background: url(../img/pag_principal/foto_principal);
+  background: url(../img/películas_destacadas/elcaballero-oscuro.jpg);
   background-position: center center;
   background-size: cover;
   margin-bottom: 3.12em;
@@ -75,4 +75,21 @@ nav {
 
 .pelicula-principal .boton .i {
   margin-right: 1.25em;
+}
+
+#copyrightFooter {
+  text-align: center;
+  color: #e0e0e0;
+}
+#cuerpoFooter .h5 {
+  color: #5d534e;
+ text-decoration:underline #5c636a
+}
+#cuerpoFooter li a,li{
+  text-decoration: none ;
+  color: #e0e0e0;
+}
+#cuerpoFooter ul {
+  list-style: none;
+padding-left: 0;
 }

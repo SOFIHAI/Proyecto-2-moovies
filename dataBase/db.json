@@ -6,63 +6,72 @@
       "titulo": "Cinema paradiso",
       "categoria": "Drama",
       "año": 1988,
-      "img": "../img/películas_destacadas/cinema paradiso.jpg"
+      "img": "../img/películas_destacadas/cinema paradiso.jpg",
+      "sinopsis": "Salvatore es un niño de un pueblecito italiano, donde el único pasatiempo es ir al cine. Totalmente nublado por la magia de las películas, Slavatore crece creyendo que el cine es magia. Salvatore se hace mayor y debe buscarse la vida fuera de su pueblo, pero años después recibe un mensaje en el que le comunican que debe de volver a casa."
     },
     {
       "id": 2,
       "titulo": "El padrino",
       "categoria": "Drama",
       "año": 1972,
-      "img": "../img/películas_destacadas/el padrino.jpg"
+      "img": "../img/películas_destacadas/el padrino.jpg",
+      "sinopsis": "Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo, intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes."
     },
     {
       "id": 3,
       "titulo": "El caballero oscuro",
       "categoria": "Acción",
       "año": 2008,
-      "img": "../img/películas_destacadas/elcaballero-oscuro.jpg"
+      "img": "../img/películas_destacadas/elcaballero-oscuro.jpg",
+      "sinopsis": "Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos."
     },
     {
       "id": 4,
       "titulo": "El señor de los anillos",
       "categoria": "Acción",
       "año": 2004,
-      "img": "../img/películas_destacadas/elseñor de los anillos.jpg"
+      "img": "../img/películas_destacadas/elseñor de los anillos.jpg",
+      "sinopsis": "En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media."
     },
     {
       "id": 5,
       "titulo": "Interestelar",
       "categoria": "Acción",
       "año": 2014,
-      "img": "../img/películas_destacadas/interestelar.jpg"
+      "img": "../img/películas_destacadas/interestelar.jpg",
+      "sinopsis": "Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí. La Tierra está llegando a su fin y este grupo necesita encontrar un planeta más allá de nuestra galaxia que garantice el futuro de la raza humana."
     },
     {
       "id": 6,
       "titulo": "Joker",
       "categoria": "Drama",
       "año": 2019,
-      "img": "../img/películas_destacadas/joker.jpg"
+      "img": "../img/películas_destacadas/joker.jpg",
+      "sinopsis": "La pasión de Arthur Fleck, un hombre ignorado por la sociedad, es hacer reír a la gente. Sin embargo, una serie de trágicos sucesos harán que su visión del mundo se distorsione considerablemente convirtiéndolo en un brillante criminal."
     },
     {
       "id": 7,
       "titulo": "La vida es Bella",
       "categoria": "Drama",
       "año": 1997,
-      "img": "../img/películas_destacadas/la vida es bella.jpg"
+      "img": "../img/películas_destacadas/la vida es bella.jpg",
+      "sinopsis": "En 1939, a punto de estallar la Segunda Guerra Mundial, Guido llega a Arezzo con la intención de abrir una librería. Allí conoce a Dora y, a pesar de que está prometida con el fascista Rodolfo, acaba casándose con ella y tienen un hijo. Poco después de estallar la guerra, las tropas nazis llegan a Italia y los tres son internados en un campo de concentración. Allí, Guido construye una elaborada fantasía para proteger a su hijo y hacerle creer que la situación es tan solo un juego."
     },
     {
       "id": 8,
       "titulo": "Uno de los nuestros",
       "categoria": "Acción",
       "año": 1990,
-      "img": "../img/películas_destacadas/uno de los nuestros.jpg"
+      "img": "../img/películas_destacadas/uno de los nuestros.jpg",
+      "sinopsis": "Henry, un niño de trece años de Brooklyn, vive fascinado con el mundo de los gángsters. Su sueño se hace realidad cuando entra en la familia Pauline."
     },
     {
       "id": 9,
       "titulo": "Parasitos",
       "categoria": "Drama",
       "año": 2019,
-      "img": "../img/películas_destacadas/parasitos.jpg"
+      "img": "../img/películas_destacadas/parasitos.jpg",
+      "sinopsis": "Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a recibir clases particulares en la adinerada casa de Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, comienzan una relación de resultados imprevisibles."
     }
   ],
   "agregadasRecientemente": [
@@ -111,76 +120,38 @@
       "img": "../img/Accion/El imperio contraataca.jpg"
     }
   ],
-  "comedia": [
+  "usuarios": [
     {
       "id": 1,
-      "title": "Birdman",
-      "category": "comedia",
-      "año": 2014,
-      "img": ""
+      "email": "sofihaiquel@gmail.com",
+      "userName": "sofiHai",
+      "date": "Wed Aug 16 2023 20:21:43 GMT-0300",
+      "password": "aaa123",
+      "role": "ADMIN"
     },
     {
       "id": 2,
-      "title": "De ladrón a policía",
-      "category": "comedia",
-      "año": 1999,
-      "img": ""
+      "email": "Miguelgimenez322@hotmail.com ",
+      "userName": "MiguelGim",
+      "date": "Wed Aug 16 2023 20:21:43 GMT-0300",
+      "password": "bbb123",
+      "role": "USER"
     },
     {
-      "id": 3,
-      "title": "Un cuento chino",
-      "category": "comedia",
-      "año": 2011,
-      "img": ""
+      "email": "hugotorres2060@gmai",
+      "userName": "HugoTo",
+      "date": "2023-08-29T00:21:02.128Z",
+      "password": "ccc123",
+      "role": "USER",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": "Pelotas em juego",
-      "category": "comedia",
-      "año": 2004,
-      "img": ""
-    },
-    {
-      "id": 5,
-      "title": "La crónica francesa",
-      "category": "comedia",
-      "año": 2021,
-      "img": ""
-    },
-    {
-      "id": 6,
-      "title": "El robo del siglo",
-      "category": "comedia",
-      "año": 2020,
-      "img": ""
-    },
-    {
-      "id": 7,
-      "title": "Mentiroso, mentiroso",
-      "category": "comedia",
-      "año": 1997,
-      "img": ""
-    },
-    {
-      "id": 8,
-      "title": "Los pequeños Focker",
-      "category": "comedia",
-      "año": 2010,
-      "img": ""
-    },
-    {
-      "id": 9,
-      "title": "Sentimental",
-      "category": "comedia",
-      "año": 2020,
-      "img": ""
-    },
-    {
-      "id": 10,
-      "title": "Casi leyendas",
-      "category": "comedia",
-      "año": 2017,
-      "img": ""
+      "email": "gabrielamaya@gmail.com",
+      "userName": "AleBusi33",
+      "password": "ddd123",
+      "passwordCheck": "ddd123",
+      "date": "2023-08-30T23:22:34.014Z",
+      "id": 4
     }
   
   ]

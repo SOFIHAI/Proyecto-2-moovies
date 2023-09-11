@@ -12,6 +12,6 @@ async function obtenerInformacion  () {
   
   return informacion;
   } 
-  export  {
-    obtenerInformacion,
-  }
+ 
+  export  {obtenerInformacion};
+
