@@ -1,218 +1,114 @@
 {
-  "películas-destacadas": [
+  "peliculasDestacadas": [
+    
     {
       "id": 1,
-      "title": "el Menú",
-      "category": "suspenso",
-      "año": 2022,
-      "img": "./img/películas_destacadas/the-menu"
+      "titulo": "Cinema paradiso",
+      "categoria": "Drama",
+      "año": 1988,
+      "img": "../img/películas_destacadas/cinema paradiso.jpg"
     },
     {
       "id": 2,
-      "title": "Mi novia Polly",
-      "category": "comedia",
-      "año": 2014,
-      "img": ""
+      "titulo": "El padrino",
+      "categoria": "Drama",
+      "año": 1972,
+      "img": "../img/películas_destacadas/el padrino.jpg"
     },
     {
       "id": 3,
-      "title": "Ámsterdan",
-      "category": "drama",
-      "año": 2022,
-      "img": ""
+      "titulo": "El caballero oscuro",
+      "categoria": "Acción",
+      "año": 2008,
+      "img": "../img/películas_destacadas/elcaballero-oscuro.jpg"
     },
     {
       "id": 4,
-      "title": "El visitante",
-      "category": "terror",
-      "año": 2022,
-      "img": ""
+      "titulo": "El señor de los anillos",
+      "categoria": "Acción",
+      "año": 2004,
+      "img": "../img/películas_destacadas/elseñor de los anillos.jpg"
     },
     {
       "id": 5,
-      "title": "Asfixiados",
-      "category": "romance",
-      "año": 2023,
-      "img": ""
+      "titulo": "Interestelar",
+      "categoria": "Acción",
+      "año": 2014,
+      "img": "../img/películas_destacadas/interestelar.jpg"
     },
     {
       "id": 6,
-      "title": "Babylon",
-      "category": "comedia",
-      "año": 2022,
-      "img": ""
+      "titulo": "Joker",
+      "categoria": "Drama",
+      "año": 2019,
+      "img": "../img/películas_destacadas/joker.jpg"
     },
     {
       "id": 7,
-      "title": "30 noches con mi ex",
-      "category": "romance",
-      "año": 2022,
-      "img": ""
-    },
-    {
-      "id": 8,
-      "title": "La forma del agua",
-      "category": "drama",
-      "año": 2017,
-      "img": ""
-    },
-    {
-      "id": 9,
-      "title": "John Lennon",
-      "category": "documental",
-      "año": 2020,
-      "img": ""
-    },
-    {
-      "id": 10,
-      "title": "Allien",
-      "category": "ciencia ficción",
-      "año": 1992,
-      "img": ""
-    }
-  ],
-  "ciencia-ficción": [
-    {
-      "id": 1,
-      "title": "Matrix",
-      "category": "ciencia ficción",
-      "año": 1999,
-      "img": ""
-    },
-    {
-      "id": 2,
-      "title": "Metropolis",
-      "category": "ciencia ficción",
-      "año": 1927,
-      "img": ""
-    },
-    {
-      "id": 3,
-      "title": "El planeta de los simios",
-      "category": "ciencia ficción",
-      "año": 1968,
-      "img": ""
-    },
-    {
-      "id": 4,
-      "title": "El depredador",
-      "category": "ciencia ficción",
-      "año": 2018,
-      "img": ""
-    },
-    {
-      "id": 5,
-      "title": "Allien",
-      "category": "ciencia ficción",
-      "año": 1992,
-      "img": ""
-    },
-    {
-      "id": 6,
-      "title": "Hombres de negro III",
-      "category": "ciencia ficción",
-      "año": 2012,
-      "img": ""
-    },
-    {
-      "id": 7,
-      "title": "Armagedon",
-      "category": "ciencia ficción",
-      "año": 1998,
-      "img": ""
-    },
-    {
-      "id": 8,
-      "title": "Animal",
-      "category": "ciencia ficción",
-      "año": 2001,
-      "img": ""
-    },
-    {
-      "id": 9,
-      "title": "Mente poderosa",
-      "category": "ciencia ficción",
-      "año": 2018,
-      "img": ""
-    },
-    {
-      "id": 10,
-      "title": "La torre oscura",
-      "category": "ciencia ficción",
-      "año": 2017,
-      "img": ""
-    }
-  ],
-  "romance": [
-    {
-      "id": 1,
-      "title": "Comer, rezar, amar",
-      "category": "romance",
-      "año": 2010,
-      "img": ""
-    },
-    {
-      "id": 2,
-      "title": "Recién casados",
-      "category": "romance",
-      "año": 2003,
-      "img": ""
-    },
-    {
-      "id": 3,
-      "title": "La la land",
-      "category": "romance",
-      "año": 2016,
-      "img": ""
-    },
-    {
-      "id": 4,
-      "title": "La teoría del todo",
-      "category": "romance",
-      "año": 2014,
-      "img": ""
-    },
-    {
-      "id": 5,
-      "title": "Una noche de amor",
-      "category": "romance",
-      "año": 2016,
-      "img": ""
-    },
-    {
-      "id": 6,
-      "title": "Titanic",
-      "category": "romance",
+      "titulo": "La vida es Bella",
+      "categoria": "Drama",
       "año": 1997,
-      "img": ""
-    },
-    {
-      "id": 7,
-      "title": "La propuesta",
-      "category": "romance",
-      "año": 2009,
-      "img": ""
+      "img": "../img/películas_destacadas/la vida es bella.jpg"
     },
     {
       "id": 8,
-      "title": "Sin hijos",
-      "category": "romance",
-      "año": 2015,
-      "img": ""
+      "titulo": "Uno de los nuestros",
+      "categoria": "Acción",
+      "año": 1990,
+      "img": "../img/películas_destacadas/uno de los nuestros.jpg"
     },
     {
       "id": 9,
-      "title": "Amigos con derecho",
-      "category": "romance",
-      "año": 2011,
-      "img": ""
+      "titulo": "Parasitos",
+      "categoria": "Drama",
+      "año": 2019,
+      "img": "../img/películas_destacadas/parasitos.jpg"
+    }
+  ],
+  "agregadasRecientemente": [
+    {
+      "id": 1,
+      "titulo": "Your name",
+      "categoria": "Romance",
+      "año": 2016,
+      "img": "../img/Agregadas-recientemente/your name.jpg"
     },
     {
-      "id": 10,
-      "title": "De amor y otras adicciones",
-      "category": "romance",
+      "id": 2,
+      "titulo": "Toda una vida en un año",
+      "categoria": "Drama",
+      "año": 2020,
+      "img": "../img/Agregadas-recientemente/Toda una vida en un año.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Rojo, blanco y sangre azul",
+      "categoria": "ciencia ficción",
+      "año": 2023,
+      "img": "../img/Agregadas-recientemente/Rojo-blanco y sangre azul.jpg"
+    }
+  ],
+  "accion": [
+    {
+      "id": 1,
+      "titulo": "El origen",
+      "categoria": "Acción",
       "año": 2010,
-      "img": ""
+      "img": "../img/Accion/El origen.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "El club de la lucha",
+      "categoria": "Acción",
+      "año": 1999,
+      "img": "../img/Accion/El club de la lucha.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "El imperio contraataca",
+      "categoria": "Acción",
+      "año": 1980,
+      "img": "../img/Accion/El imperio contraataca.jpg"
     }
   ],
   "comedia": [
@@ -286,5 +182,6 @@
       "año": 2017,
       "img": ""
     }
+  
   ]
 }
