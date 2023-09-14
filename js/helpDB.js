@@ -1,4 +1,13 @@
-async function obtenerInformacion  () {
+
+
+
+
+
+
+
+
+
+/*async function obtenerInformacion  () {
     
   let informacion = await fetch('../dataBase/db.json')
   .then(response => response.json())
@@ -12,6 +21,6 @@ async function obtenerInformacion  () {
   
   return informacion;
   } 
- 
-  export  {obtenerInformacion};
 
+  export {obtenerInformacion};
+*/

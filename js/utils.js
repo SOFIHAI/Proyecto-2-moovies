@@ -7,9 +7,13 @@ export const messages = {
   passwordCheckbad: 'Las contraseñas no coinciden.',
   userNotExist: 'El usuario no existe.',
   userOrPasswordBad: 'Usuario o contraseña erronea.',
-  closeSessionPrompt: '¡Quieres cerrar sesion de esa cuenta?',
+  closeSessionPrompt: 'Quieres cerrar sesion de esa cuenta?',
 };
 
+/**
+ * @param {Event} e Recibe el evento de el formulario.
+ * @returns Un objeto con todas las propiedades y valores de los inputs.
+ */
 
 export const getFormData = (e) => {
   const formData = new FormData(e.target);

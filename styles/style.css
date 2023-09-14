@@ -1,56 +1,9 @@
 * {
   list-style: none;
   box-sizing: border-box;
-}
-
-nav {
-
-  background-color: black;
   
 }
 
-.img-main {
-  height: 50%;
-}
-
-.container {
-  margin-top: 20px;
-}
-
-.tituloPelicula {
-  margin-top: 80px;
-}
-
-.pelicula-principal {
-  font-size: 16px;
-  min-height: 40.62em;
-  color: #fff;
-  background: url(../img/películas_destacadas/elcaballero-oscuro.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 3.12em;
-  display: flex;
-  align-items: end;
-}
-
-.pelicula-principal .contenedor {
-  margin: 0 auto;
-  margin-bottom: 6.25em;
-}
-
-.pelicula-principal .titulo {
-  font-weight: 600;
-  font-size: 3.12em;
-  margin-bottom: 0.4em;
-}
-
-.pelicula-principal .descripcion {
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.75em;
-  max-width: 50%;
-  margin-bottom: 1.25em;
-}
 
 .pelicula-principal .boton {
   background: rgba(0, 0, 0, 0.5);
@@ -61,7 +14,7 @@ nav {
   margin-right: 1.25em;
   cursor: pointer;
   transition: 0.3s ease all;
-  font-size: 1.12em;
+  font-size: 1em;
 }
 
 .pelicula-principal .boton:hover {
@@ -82,8 +35,8 @@ nav {
   color: #e0e0e0;
 }
 #cuerpoFooter .h5 {
-  color: #5d534e;
- text-decoration:underline #5c636a
+  color: #fff;
+ text-decoration:underline #fff
 }
 #cuerpoFooter li a,li{
   text-decoration: none ;

@@ -1,12 +1,16 @@
-import navbar from '../components/navbar.js';
 import { users } from './users.js';
 import { messages, getFormData } from './utils.js';
+import myFooter from '../components/footer.js';
 
-document.addEventListener('DOMContentLoaded', navbar);
+
+document.addEventListener('DOMContentLoaded', () => {
+  myFooter();
+});
+
 
 const createUser = async (body) => {
   try {
-    const resp = await fetch('http://localhost:3000/usuarios', {
+    const resp = await fetch('http://localhost:3000/users', {
       method: 'POST',
       body: JSON.stringify(body),
       headers: {
@@ -14,7 +18,7 @@ const createUser = async (body) => {
       },
     });
     const data = await resp.json();
-    window.location.href = './login.html';
+    window.location.href = '../login.html';
   } catch (error) {
     console.log(error);
   }
