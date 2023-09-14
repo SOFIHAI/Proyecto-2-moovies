@@ -1,13 +1,33 @@
-
-import { obtenerInformacion } from "../helpers/helpDB.js";
-
+import { getFormData } from "./utils";
 
 
 let contenedor = document.getElementById("box1"),
 contenedor2 = document.getElementById("box2"),
 contenedor3 = document.getElementById("box3");
 
+const getPeliculas = async () => {
+  try {
+    const resp = await fetch('http://localhost:3000/peliculas');
+    console.log(resp.status);
+    const data = await resp.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+
+/*import  {obtenerInformacion}  from "../js/helpDB";
+
+
 let infoPeliculas = await obtenerInformacion();
+
+
+
+let contenedor = document.getElementById("box1"),
+contenedor2 = document.getElementById("box2"),
+contenedor3 = document.getElementById("box3");
 
 infoPeliculas?.peliculasDestacadas?.map(pelicula => {
     let div = document.createElement("div");
@@ -54,19 +74,19 @@ infoPeliculas?.accion?.map(pelicula => {
 });
 
 
+
 function cargarBotones() {
   const listaBotones = document.querySelectorAll('.detalle-btn');
   listaBotones.forEach(boton => {
     boton.onclick = function (cargarBotones) {
       let url = '../detalles.html' ;
       window.open(url);
-  };
-});
+    };
+  });
 }
 cargarBotones();
 
 export {cargarBotones};
 
   
-  
-  
+*/

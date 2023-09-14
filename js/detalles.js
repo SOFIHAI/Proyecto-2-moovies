@@ -1,4 +1,4 @@
-import { obtenerInformacion } from "../helpers/helpDB";
+/*import { obtenerInformacion } from "./helpDB";
 
 let detalles = await obtenerInformacion();
 
@@ -31,3 +31,4 @@ pagDetalles.innerHTML = `<div class="detalle container-fluid d-flex flex-row jus
    
 </div>
 </div>`;
+*/

@@ -1,10 +1,9 @@
 {
-  "peliculasDestacadas": [
-    
+  "peliculas": [
     {
       "id": 1,
       "titulo": "Cinema paradiso",
-      "categoria": "Drama",
+      "categoria": "Acción",
       "año": 1988,
       "img": "../img/películas_destacadas/cinema paradiso.jpg",
       "sinopsis": "Salvatore es un niño de un pueblecito italiano, donde el único pasatiempo es ir al cine. Totalmente nublado por la magia de las películas, Slavatore crece creyendo que el cine es magia. Salvatore se hace mayor y debe buscarse la vida fuera de su pueblo, pero años después recibe un mensaje en el que le comunican que debe de volver a casa."
@@ -12,7 +11,7 @@
     {
       "id": 2,
       "titulo": "El padrino",
-      "categoria": "Drama",
+      "categoria": "Acción",
       "año": 1972,
       "img": "../img/películas_destacadas/el padrino.jpg",
       "sinopsis": "Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo, intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes."
@@ -44,7 +43,7 @@
     {
       "id": 6,
       "titulo": "Joker",
-      "categoria": "Drama",
+      "categoria": "Acción",
       "año": 2019,
       "img": "../img/películas_destacadas/joker.jpg",
       "sinopsis": "La pasión de Arthur Fleck, un hombre ignorado por la sociedad, es hacer reír a la gente. Sin embargo, una serie de trágicos sucesos harán que su visión del mundo se distorsione considerablemente convirtiéndolo en un brillante criminal."
@@ -52,7 +51,7 @@
     {
       "id": 7,
       "titulo": "La vida es Bella",
-      "categoria": "Drama",
+      "categoria": "Acción",
       "año": 1997,
       "img": "../img/películas_destacadas/la vida es bella.jpg",
       "sinopsis": "En 1939, a punto de estallar la Segunda Guerra Mundial, Guido llega a Arezzo con la intención de abrir una librería. Allí conoce a Dora y, a pesar de que está prometida con el fascista Rodolfo, acaba casándose con ella y tienen un hijo. Poco después de estallar la guerra, las tropas nazis llegan a Italia y los tres son internados en un campo de concentración. Allí, Guido construye una elaborada fantasía para proteger a su hijo y hacerle creer que la situación es tan solo un juego."
@@ -68,13 +67,11 @@
     {
       "id": 9,
       "titulo": "Parasitos",
-      "categoria": "Drama",
+      "categoria": "Acción",
       "año": 2019,
       "img": "../img/películas_destacadas/parasitos.jpg",
       "sinopsis": "Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a recibir clases particulares en la adinerada casa de Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, comienzan una relación de resultados imprevisibles."
-    }
-  ],
-  "agregadasRecientemente": [
+    },
     {
       "id": 1,
       "titulo": "Your name",
@@ -85,19 +82,17 @@
     {
       "id": 2,
       "titulo": "Toda una vida en un año",
-      "categoria": "Drama",
+      "categoria": "Romance",
       "año": 2020,
       "img": "../img/Agregadas-recientemente/Toda una vida en un año.jpg"
     },
     {
       "id": 3,
       "titulo": "Rojo, blanco y sangre azul",
-      "categoria": "ciencia ficción",
+      "categoria": "Romance",
       "año": 2023,
       "img": "../img/Agregadas-recientemente/Rojo-blanco y sangre azul.jpg"
-    }
-  ],
-  "accion": [
+    },
     {
       "id": 1,
       "titulo": "El origen",
@@ -120,7 +115,7 @@
       "img": "../img/Accion/El imperio contraataca.jpg"
     }
   ],
-  "usuarios": [
+  "users": [
     {
       "id": 1,
       "email": "sofihaiquel@gmail.com",
@@ -138,7 +133,7 @@
       "role": "USER"
     },
     {
-      "email": "hugotorres2060@gmai",
+      "email": "hugotorres2060@gmail.com",
       "userName": "HugoTo",
       "date": "2023-08-29T00:21:02.128Z",
       "password": "ccc123",
@@ -152,7 +147,22 @@
       "passwordCheck": "ddd123",
       "date": "2023-08-30T23:22:34.014Z",
       "id": 4
+    },
+    {
+      "email": "silvihai@gmail.com",
+      "userName": "silvi",
+      "password": "hola123",
+      "passwordCheck": "hola123",
+      "date": "2023-09-13T19:20:13.162Z",
+      "id": 5
+    },
+    {
+      "email": "soso@gmail.com",
+      "userName": "sss",
+      "password": "hola123",
+      "passwordCheck": "hola123",
+      "date": "2023-09-13T19:39:42.350Z",
+      "id": 6
     }
-  
   ]
 }
