@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Movies</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header></header>
+
+  <main class="mainAdministrador">
+    <section class="container-fluid">
+      <article class="row">
+        <span class="col-xl-10 col-sm-8 col-md-8 col-lg-8">
+          <p class="h4 text-center" id="tituloAdministrarPeli">
+            Administrar Películas
+          </p>
+        </span>
+        <span class="col-xl-2 col-sm-4 col-md-4 col-lg-4">
+          <button type="submit" class="btn btn-primary d-flex" id="btnNuevaPeli" data-bs-toggle="modal"
+            data-bs-target="#agregarPeliModal">
+            <i class="bi bi-plus-circle mx-1"></i> Nueva Película
+          </button>
+        </span>
+      </article>
+      <article class="row my-4 d-flex justify-content-center table-responsive mx-1">
+        <table class="text-center table table-hover">
+          <thead>
+            <th scope="col"></th>
+            <th scope="col" class="codigo">Codigo</th>
+            <th scope="col" class="nombre">Nombre</th>
+            <th scope="col" class="categoria">Categoría</th>
+            <th scope="col" class="sinopsis">Sinopsis</th>
+            <th scope="col" class="publicado">Publicado</th>
+            <th scope="col" class="opciones">Opciones</th>
+          </thead>
+          <tbody id="bodyListPeli"></tbody>
+        </table>
+      </article>
+    </section>
+    <!--Modal agregar película-->
+    <div class="modal fade" id="agregarPeliModal" tabindex="-1" aria-labelledby="agregarPeliModalLabel"
+      aria-hidden="true">
+      <section class="modal-dialog">
+        <article class="modal-content modalAgregarPeli">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="agregarPeliModalLabel">
+              Agregar Nueva Película
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="form-control" id="formAgregarPeliModal" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nombreComic" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombrePeli" required minlength="1" maxlength="50"
+                  placeholder="Nombre Película" />
+                <div class="invalid-feedback">
+                  Por favor, ingrese el nombre de una Película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="categoriaPeli" class="form-label">Categoría:</label>
+                <input type="text" class="form-control" id="categoriaPeli" required minlength="1" maxlength="30"
+                  placeholder="Accion/Drama/Romance" />
+                <div class="invalid-feedback">
+                  Por favor, ingrese categoría de la Película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="sipnosisPeli" class="form-label">Sipnosis:</label>
+                <textarea type="text" class="form-control" id="sipnosisPeli" cols="5" rows="2" required minlength="1"
+                  maxlength="2000" placeholder=""></textarea>
+                <div class="invalid-feedback">
+                  Por favor, ingrese la sipnosis de una Película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="form-check" class="form-label">¿Publicar?</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="opcionSi" name="radio-stacked" value="si" required />
+                  <label class="form-check-label" for="opcionSi">Sí</label>
+                </div>
+                <div class="form-check mb-3">
+                  <input type="radio" class="form-check-input" id="opcionNo" name="radio-stacked" value="no" required />
+                  <label class="form-check-label" for="opcionNo">No</label>
+                  <div class="invalid-feedback">
+                    Por favor, seleccione una opción!.
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnCancelar">
+                  Cancelar
+                </button>
+                <button type="submit" class="btn btn-success" id="btnAgregarPeli">
+                  Agregar Película
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- Modal  ver sinopsis-->
+    <div class="modal fade" id="verSynopsisPeli" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="viewSynopsisPeliLabel" aria-hidden="true">
+      <section class="modal-dialog">
+        <article class="modal-content modalVideoPeli">
+          <div class="modal-header">
+            <h5 class="modal-title" id="verSynopsisPeliLabel">Sipnosis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              id="verSynopsisClose"></button>
+          </div>
+          <div class="modal-body" id="textoSynopsis"></div>
+        </article>
+      </section>
+    </div>
+    <!--Modal Modificar comic -->
+    <div class="modal fade" id="modificarPeliModal" tabindex="-1" aria-labelledby="modificarPeliModalLabel"
+      aria-hidden="true">
+      <section class="modal-dialog">
+        <article class="modal-content modalAgregarPeli">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modificarPeliModalLabel">
+              Modificar Película
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="bntCloseModal"></button>
+          </div>
+          <div class="modal-body">
+            <form action="form-control" id="formModificarPeliModal" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nombrePeli" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombrePeliModificar" required minlength="1"
+                  maxlength="30" />
+                <div class="invalid-feedback">
+                  Por favor, ingrese el nombre de la Película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="categoriaPeli" class="form-label">Categoría:</label>
+                <input type="text" class="form-control" id="categoriaPeliModificar" required minlength="1"
+                  maxlength="20" />
+                <div class="invalid-feedback">
+                  Por favor, ingrese categoría de la Película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="sipnosisPeli" class="form-label">Sipnosis:</label>
+                <textarea type="text" class="form-control" id="sipnosisPeliModificar" cols="20" rows="5" required
+                  minlength="1" maxlength="2000"></textarea>
+                <div class="invalid-feedback">
+                  Por favor, ingrese sipnosis de la película!.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="selectorEstado" class="form-label">Estado:</label>
+                <select class="form-select" id="estadoPeliModificar" name="selectorEstado" required></select>
+                <div class="invalid-feedback">
+                  Por favor, seleccioná el Estado de la Película!.
+                </div>
+              </div>
+         
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnCancelarModificacion">
+                  Cancelar
+                </button>
+                <button type="submit" class="btn btn-success" id="btnGuardarModificacionPeli">
+                  Guardar Modificación
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="./js/administarPeli.js"></script>
+  <script src="https://kit.fontawesome.com/7d33904a09.js"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+</body>
+</html>
