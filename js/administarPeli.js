@@ -24,21 +24,9 @@ const formAgregarPeli = document.getElementById("formAgregarPeliModal"),
     });
        bodyListPeli.getElementById('bodyListPeli').appendChild(fragmento);
     } catch (error) {
-      
+
     }
   };
 
 document.addEventListener("DOMContentLoaded", getPeliculas); 
  
-/*
-const agregarPelis = (event) => {
-  event.preventDefault();
-  const name = document.getElementById("nombrePeli").value,
-    category = document.getElementById("categoriaPeli").value,
-    synopsis = document.getElementById("sipnosisPeli").value,
-    opcion = parsearBoolean(document.querySelector('input[name="radio-stacked"]:checked').value),
-    status = obtenerEstado('estadoPeli'),
-    price = document.getElementById("precioComic").value
-  };
-  agregarPelis();
-  */
