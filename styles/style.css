@@ -6,6 +6,21 @@ font-family: 'Open Sans', sans-serif;
   
 }
 
+.navbar {
+  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+}
+
+.footer {
+  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+}
+
+body {
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
+
+.loginForm{
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
 
 .pelicula-principal .boton {
   background: rgba(0, 0, 0, 0.5);
@@ -32,6 +47,10 @@ font-family: 'Open Sans', sans-serif;
   margin-right: 1.25em;
 }
 
+.cards-principal {
+  background-color: rgba(7,7,9,1);
+}
+
 #copyrightFooter {
   text-align: center;
   color: #e0e0e0;
@@ -49,13 +68,16 @@ font-family: 'Open Sans', sans-serif;
 padding-left: 0;
 }
 
-.bodyNosotros {
+#bodyNosotros {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+margin-top: 80px;
   background-image: linear-gradient(to right, #secondary 0%, white 100%);
 }
+
+
+
 
 
 .cardNosotros {
@@ -78,7 +100,7 @@ padding-left: 0;
   overflow: hidden;
   text-align: center;
   padding: 20px;
-  background: #7eecf0;
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 .cardNosotros .content .img {
@@ -99,7 +121,7 @@ padding-left: 0;
   position: absolute;
   width: 350px;
   height: 200px;
-  background: linear-gradient(to top, white 50%, #7eecf0 100%);
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
   top: 285px;
   left: 0px;
 }
@@ -174,7 +196,7 @@ padding-left: 0;
 }
 
 .bodyError404 {
-  background-image: linear-gradient(120deg, #7eecf0 0%, #fff 100%);
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 .error-message {
@@ -188,7 +210,7 @@ padding-left: 0;
 
 .error-message__container {
   text-align: center;
-  color: black;
+  color: white;
 }
 
   .titulo404 {
@@ -201,7 +223,7 @@ padding-left: 0;
   .bodyContacto{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to top, #7eecf0 0%, white 100%);
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
   }
   
   .containerContacto {
@@ -263,7 +285,7 @@ padding-left: 0;
       height: 4px;
       width: 50px;
       border-radius: 2px;
-      background-color: #7eecf0;
+      background-color: rgb(81, 137, 240);
   }
   
   .field{
@@ -289,7 +311,7 @@ padding-left: 0;
   .btnContacto{
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #55bcc0;
+    background-color: rgb(81, 137, 240);
     color: #fff;
     font-size: 1.1rem;
     border: none;
@@ -299,15 +321,31 @@ padding-left: 0;
   }
   
   .btnContacto:hover{
-      background-color: #7eecf0;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
   }
+  
   
   .field:focus{
       border: 2px solid rgba(30,85,250,0.47);
       background-color: #fff;
   }
-  
+  .section-main {
+    margin-top:80px;
+   
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    padding: 20px 0;
+  }
+  .form-control{
+    height: 44px;
+  }
 
+  .detalle-btn {
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+  }
+  .btn-buscar {
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    border: none;
+  }
 
 @media screen and (max-width: 750px) {
   .containerNosotros {
