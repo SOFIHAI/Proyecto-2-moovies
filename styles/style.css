@@ -72,8 +72,8 @@ padding-left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-margin-top: 80px;
-  background-image: linear-gradient(to right, #secondary 0%, white 100%);
+  margin-top: 80px;
+  background-image: linear-gradient(to right, gray 0%, white 100%);
 }
 
 
@@ -399,4 +399,13 @@ margin-top: 80px;
         background-position: center;
         background-size: cover;
 	}
+}
+
+@media screen and (max-width: 780px){
+	.descripcion {
+    display: none;
+  }
+  .titulo {
+    display: flex;
+  }
 }
