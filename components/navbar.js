@@ -3,7 +3,7 @@ const header = document.querySelector('header');
 const navbar = () => {
   const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
   return (header.innerHTML = `
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top fw-bold p-4">
+  <nav class="navbar navbar-expand-lg fixed-top fw-bold p-4">
     <div class="container-fluid">
       <a class="navbar-brand text-white" href="#">GRUPO2</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@ const navbar = () => {
             user
               ? `
               <li class="nav-item">
-                <button class="btn btn-dark" id='closeSession' onclick='localStorage.clear(), window.location.reload()'>CERRAR SESION</button>
+                <button class="btn text-white justify-content-md-end" id='closeSession' onclick='localStorage.clear(), window.location.reload()'>CERRAR SESION</button>
               </li>
               `
               : ''

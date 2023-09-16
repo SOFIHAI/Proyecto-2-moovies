@@ -18,19 +18,20 @@ let contenedor = document.getElementById("contendorPeliculas");
 
 
 let infoPeliculas = await obtenerInformacion();
-console.log(infoPeliculas);
+
 
 
 infoPeliculas?.peliculas?.map(pelicula => {
   let div = document.createElement("div");
-  div.className = "col-lg-4 col-xl-4 col-md-4 col-4 mt-5";
+  div.className = "col-lg-4 col-xl-4 col-md-4 col-4 mt-3 p-2 cards-principal" ;
   div.id = "cards-1";
   div.innerHTML = `
   <div class="contenedorImgPelicula">
   <img src="${pelicula.img}" alt="" class="h-100 w-100">
   
 </div>
-   <h5>${pelicula.titulo}</h5>
+   <h5 class="mt-5 text-white">${pelicula.titulo}</h5>
+   <button href="../detalle.html" class="detalle-btn btn btn-outline-dark btn-sm me-4 mb-2 fs-6 text-white" id="">Detalles</button>
    
   `; 
   contenedor.appendChild(div);

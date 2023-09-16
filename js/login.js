@@ -56,3 +56,5 @@ const loginCheck = async (e) => {
 document
   .getElementById('loginForm')
   .addEventListener('submit', loginCheck, false);
+
+  export {loginCheck}
