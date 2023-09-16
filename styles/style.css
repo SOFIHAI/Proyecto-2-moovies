@@ -1,7 +1,8 @@
 * {
  margin: 0;
  padding: 0;
-  box-sizing: border-box;
+box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
   
 }
 
@@ -47,10 +48,158 @@
   list-style: none;
 padding-left: 0;
 }
-.img-main {
-  height: 50%;
+
+.bodyNosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #secondary 0%, white 100%);
 }
 
-.container {
-  margin-top: 20px;
+
+.cardNosotros {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(73, 69, 52, 0.4);
+  margin: 40px;
+}
+
+.cardNosotros .content {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background: #7eecf0;
+}
+
+.cardNosotros .content .img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.cardNosotros .content .img img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.cardNosotros .content span {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to top, white 50%, #7eecf0 100%);
+  top: 285px;
+  left: 0px;
+}
+
+.cardNosotros .content h4 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(4, 1, 1, 0.883);
+  margin-bottom: 10px;
+}
+
+.cardNosotros .content h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b4747;
+  margin-bottom: 20px;
+}
+
+.cardNosotros .links {
+  position: absolute;
+  z-index: 90;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 20px;
+  align-items: center;
+  right: 10px;
+  top: 15px;
+}
+
+.cardNosotros:hover .links {
+  right: -50px;
+  border-radius: 0 10px 10px 0;
+  transition: .5s;
+}
+
+.cardNosotros .links a {
+  font-size: 20px;
+  color: #646969;
+}
+
+.cardNosotros .links a:nth-child(1):hover {
+  color: #0158ca;
+}
+
+.cardNosotros .links a:nth-child(2):hover {
+  color: #1c93e4;
+}
+
+.cardNosotros .links a:nth-child(3):hover {
+  color: #5D277D;
+}
+
+.cardNosotros .links a:nth-child(4):hover {
+  color: #d5303e;
+}
+
+.brand img {    
+  width: 155px;
+  height: 100px;
+  position: relative;
+  top: -46px;
+  left: -90px;
+}
+
+.contNosotros {
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .containerNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .containerNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brand {
+      display: none;        
+  }
 }

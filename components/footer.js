@@ -16,7 +16,7 @@ const myFooter = () => {
     <aside class="col-xl-3 col-sm-3 col-md-3">
       <p class="h5">Navegación</p>
       <ul>
-        <li><a href="">Quienes Somos</a></li>
+        <li><a href="../nosotros.html">Quienes Somos</a></li>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./page/contacto.html">Contactanos</a></li>
         <li><a href="./page/error404.html">Nuestra Historia</a></li>
