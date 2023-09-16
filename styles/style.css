@@ -400,3 +400,12 @@ margin-top: 80px;
         background-size: cover;
 	}
 }
+
+@media screen and (max-width: 780px){
+	.descripcion {
+    display: none;
+  }
+  .titulo {
+    display: flex;
+  }
+}
