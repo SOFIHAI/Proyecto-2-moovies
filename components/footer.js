@@ -3,7 +3,7 @@ const footer = document.querySelector('footer');
 const myFooter = () => {
   
   const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
-  return (footer.innerHTML = `<section class="container-fluid bg-black">
+  return (footer.innerHTML = `<section class="container-fluid bg-black mt-5">
   <article class="row" id="cuerpoFooter">
     <aside class="col-xl-3 col-sm-3 col-md-3">
       <p class="h5">PelisGrupo2</p>
