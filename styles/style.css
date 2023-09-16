@@ -1,5 +1,6 @@
 * {
-  list-style: none;
+ margin: 0;
+ padding: 0;
   box-sizing: border-box;
   
 }
@@ -45,4 +46,11 @@
 #cuerpoFooter ul {
   list-style: none;
 padding-left: 0;
+}
+.img-main {
+  height: 50%;
+}
+
+.container {
+  margin-top: 20px;
 }
