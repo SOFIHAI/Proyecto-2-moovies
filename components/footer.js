@@ -18,15 +18,15 @@ const myFooter = () => {
       <ul>
         <li><a href="../nosotros.html">Quienes Somos</a></li>
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./page/contacto.html">Contactanos</a></li>
-        <li><a href="./page/error404.html">Nuestra Historia</a></li>
+        <li><a href="../nosotros.htmll">Contactanos</a></li>
+        <li><a href="../error404.html">Nuestra Historia</a></li>
       </ul>
     </aside>
     <aside class="col-xl-3 col-sm-3 col-md-3">
       <p class="h5">Legal</p>
       <ul>
-        <li><a href="./page/error404.html">Términos y condiciones</a></li>
-        <li><a href="./page/error404.html">Política de privacidad</a></li>
+        <li><a href="../error404.html">Términos y condiciones</a></li>
+        <li><a href="../error404.html">Política de privacidad</a></li>
         
       </ul>
     </aside>
@@ -34,16 +34,16 @@ const myFooter = () => {
       <p class="h5">Redes Sociales</p>
       <ul>
         <li>
-          <a href=""><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="../error404.html"><i class="bi bi-facebook"></i> Facebook</a>
         </li>
         <li>
-          <a href=""><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="../error404.html"><i class="bi bi-twitter"></i> Twitter</a>
         </li>
         <li>
           <a href=""><i class="bi bi-instagram"></i> Instagram</a>
         </li>
         <li>
-          <a href=""><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="../error404.html"><i class="bi bi-linkedin"></i> LinkedIn</a>
         </li>
       </ul>
     </aside>
