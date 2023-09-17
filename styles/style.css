@@ -418,3 +418,13 @@ img, .menu-icono {
   background-color: #1610be;
   transition: 0.5s;
 }
+
+button, .btn-buscar:hover {
+  color: #8a8a8a;
+  transition: 0.5s;
+}
+
+/* button, .btn-buscar:hover {
+  color: #8a8a8a;
+  transition: 0.5s;
+} */
