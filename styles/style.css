@@ -23,6 +23,53 @@ body {
   background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
+header {
+  background-image: url(/img/películas_destacadas/Principal.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  margin-top: 95px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 250px;
+}
+
+.boton-estreno {
+  position: absolute;
+  top: 53%;
+  left: 47px;
+}
+
+.boton-estreno {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1em;
+}
+
+.boton-estreno:hover {
+  background: #fff;
+  color: #000;
+}
+
+.boton-estreno i {
+  margin-right: 1.25em;
+}
+
+.boton-estreno .i {
+  margin-right: 1.25em;
+}
+
 .pelicula-principal .boton {
   background: rgba(0, 0, 0, 0.5);
   border: none;
@@ -332,9 +379,10 @@ body {
   }
   .section-main {
     margin-top:80px;
-   
-    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
     padding: 20px 0;
+    position: absolute;
+    right: 0;
+    top: -91px;
   }
   .form-control{
     height: 44px;
@@ -408,6 +456,55 @@ body {
   }
   .titulo {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 780px){
+	.descripcion {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-main {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 177vh) {
+  .boton-estreno {
+    position: absolute;
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 133vh) {
+  .boton-estreno {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .titulo {
+    display: none;
+  }
+  .descripcion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .boton-estreno {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    left: 100px;
   }
 }
 
