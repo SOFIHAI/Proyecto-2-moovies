@@ -23,7 +23,7 @@ let infoPeliculas = await obtenerInformacion();
 
 infoPeliculas?.peliculas?.map(pelicula => {
   let div = document.createElement("div");
-  div.className = "col-lg-4 col-xl-4 col-md-4 col-4 mt-3 p-2 cards-principal" ;
+  div.className = "col-lg-4 col-xl-4 col-md-4 col-3 mt-3 p-1 cards-principal" ;
   div.id = "cards-1";
   div.innerHTML = `
   <div class="contenedorImgPelicula">

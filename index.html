@@ -22,12 +22,12 @@
 
     <main>
       <div class="section-main">
-        <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="container-fluid d-flex justify-content-end align-items-center">
           <form action="" class="form-main form-inline nofloat-xs pull-right pull-left-sm">
-            <div class="form-group form-input-fields form-group-lg has-feedback container-fluid d-flex flex-row justify-content-center align-items-center mt-4">
+            <div class="form-group form-input-fields form-group-lg has-feedback container-fluid d-flex flex-row justify-content-center align-items-center mt-3">
               <label class="sr-only" for="search">Search</label>
               <div class="input-group">
-                <input type="text" class="form-control fs-5 input-search" name="q" id="buscar" placeholder="buscar">
+                <input type="text" class="form-control fs-5 input-search" name="q" id="buscar" placeholder="Buscar">
               </div>
               <button type="submit" class="btn-buscar btn btn-secondary mx-2 fs-5 fw-semibold">Buscar</button>
             </div>
@@ -36,9 +36,17 @@
       </div>
       <div class="container pt-5 mt-2">
 
+        <span class="text-danger"><hr></span>
+        <br>
+        <h1 class="text-center mt-3 text-white fw-bold"><span class="text-info">"</span>Ultimo Estreno<span class="text-info">"</span></h1>
+        <br>
+        <span class="text-danger"><hr></span>
+        <br>
+
+
         <div class="pelicula-principal card text-bg-dark">
           
-            <img src="./img/películas_destacadas/elcaballero-oscuro.jpg" class="img-fluid w-100" alt="pelicula-principal">
+            <img src="./img/películas_destacadas/elcaballero-oscuro.jpg" class="containerImgPrincipal img-fluid w-100 " alt="pelicula-principal">
             <div class="card-img-overlay row align-content-end">
               
               <div class="cols-lg-8 col-md-6 col-sm-3">
@@ -50,7 +58,7 @@
                   organizado en la ciudad de Gotham.
                 </p>
                   <button role="button" class="boton">
-                    <i class="fa-solid fa-play"></i>Reproducir
+                    <a href="error404.html" class="text-decoration-none text-white"><i class="fa-solid fa-play"></i>Reproducir</a>
                   </button>
 
 
@@ -60,12 +68,19 @@
       </div>
       
       <div class="container">
-
-        <h1 class="text-center mt-3 text-white fw-bold">Películas destacadas</h1>
+        <br>
+        <span class="text-danger"><hr></span>
+        <br>
+        <h1 class="text-center mt-3 text-white fw-bold"><span class="text-info">"</span>Peliculas Destacadas<span class="text-info">"</span></h1>
+        <br>
+        <span class="text-danger"><hr></span>
+        <br>
         <div class="row" id="contendorPeliculas">
     
         </div>
       </div>
+      <br>
+      <br>
     </main>
 
     <footer>
