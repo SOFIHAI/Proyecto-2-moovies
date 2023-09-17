@@ -3,17 +3,6 @@ const header = document.querySelector('header');
 const navbar = () => {
   const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
   return (header.innerHTML = `
-  <div class="card-img-overlay align-content-end">
-              <div class="cols-lg-8 col-md-6 col-sm-3 text-white m-5">
-                <h1 class="titulo fw-bold">"Venom"</h1>
-                <p class="descripcion fs-6 col-sm-12 text-white-50 m-1">
-                Al descubrir que realizan experimentos con formas de vida alienígena, hará todo lo posible por sacar a la luz este tipo de excesos. Tratando de obtener evidencias de un extraño organismo independiente llamado simbionte, una de las criaturas escapa, tomando a Eddie como huésped.
-                </p>
-                <br>
-                <button role="button" class="boton boton-estreno">
-                    <a href="error404.html" class="text-decoration-none text-white "><i class="fa-solid fa-play"></i>Reproducir</a>
-                </button>
-              </div>
   <nav class="navbar navbar-expand-lg fixed-top fw-bold p-2">
   <div class="section-main">
         <div class="container-fluid d-flex justify-content-end align-items-center">

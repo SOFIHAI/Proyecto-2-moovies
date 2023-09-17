@@ -57,4 +57,3 @@ document
   .getElementById('loginForm')
   .addEventListener('submit', loginCheck, false);
 
-  export {loginCheck}
