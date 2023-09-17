@@ -7,11 +7,11 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
-  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgb(114, 114, 114) 0%, rgba(114, 114, 114) 0%, rgb(114, 114, 114) 17.3%, rgb(127, 127, 127) 58.8%, rgba(114, 114, 114) 71.4%, rgba(114, 114, 114) 100.2%, rgb(114, 114, 114) 100.2% );
 }
 
 .footer {
-  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+  background-image: linear-gradient(to bottom, gray 0%, rgba(27,24,113,1) 100%);
 }
 
 body {
@@ -53,11 +53,11 @@ body {
 
 #copyrightFooter {
   text-align: center;
-  color: #e0e0e0;
+  color: #000000;
 }
 #cuerpoFooter .h5 {
   color: #fff;
- text-decoration:underline #fff
+  text-decoration:underline #fff
 }
 #cuerpoFooter li a,li{
   text-decoration: none ;
@@ -65,7 +65,7 @@ body {
 }
 #cuerpoFooter ul {
   list-style: none;
-padding-left: 0;
+  padding-left: 0;
 }
 
 #bodyNosotros {
@@ -408,4 +408,13 @@ padding-left: 0;
   .titulo {
     display: flex;
   }
+}
+
+img, .menu-icono {
+  width: 118px;
+}
+
+.nav-item:hover {
+  background-color: #1610be;
+  transition: 0.5s;
 }
