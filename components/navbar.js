@@ -3,16 +3,18 @@ const header = document.querySelector('header');
 const navbar = () => {
   const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
   return (header.innerHTML = `
-  <nav class="navbar navbar-expand-lg fixed-top fw-bold p-4">
+  <nav class="navbar navbar-expand-lg fixed-top fw-bold p-2">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">GRUPO2</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <label for="menu">
+        <img src="./img/imgNosotros/Disney_logo.png" class"menu-icono" alt="menu">
+      <label/>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
           </li>
           
           ${
@@ -23,7 +25,7 @@ const navbar = () => {
               </li>`
               : `
               <li class="nav-item">
-                <a class="nav-link text-white" href="../login.html">LOGIN</a>
+                <a class="nav-link text-white" href="../login.html">Login</a>
               </li>
           `
           }
@@ -32,7 +34,7 @@ const navbar = () => {
               ? ''
               : `
             <li class="nav-item">
-              <a class="nav-link text-white" href="../register.html">REGISTRARME</a>
+              <a class="nav-link text-white" href="../register.html">Register</a>
             </li>
           `
           }
@@ -40,7 +42,7 @@ const navbar = () => {
             user?.role === 'ADMIN'
               ? `
               <li class="nav-item">
-                <a class="nav-link text-white" href="../index.html">PANEL ADMIN</a>
+                <a class="nav-link text-white" href="../index.html">Panel de Admin.</a>
               </li>
               `
               : ''

@@ -3,7 +3,7 @@ const footer = document.querySelector('footer');
 const myFooter = () => {
   
   const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
-  return (footer.innerHTML = `<section class="container-fluid p-5 footer ">
+  return (footer.innerHTML = `<section class="container-fluid p-3 mt-5 footer ">
   <article class="row justify-content-between" id="cuerpoFooter">
     <aside class="col-xl-3 col-sm-3 col-md-3">
       <p class="h5">PelisGrupo2</p>
@@ -48,7 +48,7 @@ const myFooter = () => {
       </ul>
     </aside>
   </article>
-  <article class="row" id="copyrightFooter">
+  <article class="row " id="copyrightFooter">
     <p class="h6 text-center">&copy; 2023 Grupo 2. Todos los derechos reservados.</p>
   </article>
 </section>`);
