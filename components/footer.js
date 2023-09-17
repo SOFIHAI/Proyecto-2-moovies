@@ -48,7 +48,7 @@ const myFooter = () => {
       </ul>
     </aside>
   </article>
-  <article class="row " id="copyrightFooter">
+  <article class="row" id="copyrightFooter">
     <p class="h6 text-center">&copy; 2023 Grupo 2. Todos los derechos reservados.</p>
   </article>
 </section>`);
