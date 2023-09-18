@@ -2,7 +2,7 @@
   "peliculas": [
     {
       "id": 1,
-      "titulo": "Cinema paradiso",
+      "titulo": "IRON MAN 3",
       "categoria": "Acción",
       "año": 1988,
       "img": "../img/películas_destacadas/cinema paradiso.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "titulo": "El padrino",
+      "titulo": "Thor - Love thunder",
       "categoria": "Acción",
       "año": 1972,
       "img": "../img/películas_destacadas/el padrino.jpg",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "titulo": "El caballero oscuro",
+      "titulo": "Thor - Ragnarok",
       "categoria": "Acción",
       "año": 2008,
       "img": "../img/películas_destacadas/elcaballero-oscuro.jpg",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "titulo": "El señor de los anillos",
+      "titulo": "Resident evil",
       "categoria": "Acción",
       "año": 2004,
       "img": "../img/películas_destacadas/elseñor de los anillos.jpg",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "titulo": "Interestelar",
+      "titulo": "La vieja guardia",
       "categoria": "Acción",
       "año": 2014,
       "img": "../img/películas_destacadas/interestelar.jpg",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "titulo": "Joker",
+      "titulo": "SPECTRAL",
       "categoria": "Acción",
       "año": 2019,
       "img": "../img/películas_destacadas/joker.jpg",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "titulo": "La vida es Bella",
+      "titulo": "Abrazad la gloria",
       "categoria": "Acción",
       "año": 1997,
       "img": "../img/películas_destacadas/la vida es bella.jpg",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "titulo": "Uno de los nuestros",
+      "titulo": "VENOM",
       "categoria": "Acción",
       "año": 1990,
       "img": "../img/películas_destacadas/uno de los nuestros.jpg",
@@ -74,7 +74,7 @@
     },
     {
       "id": 9,
-      "titulo": "Parasitos",
+      "titulo": "Projet power",
       "categoria": "Acción",
       "año": 2019,
       "img": "../img/películas_destacadas/parasitos.jpg",
@@ -83,7 +83,7 @@
     },
     {
       "id": 10,
-      "titulo": "Your name",
+      "titulo": "The Avengers - End game",
       "categoria": "Romance",
       "año": 2016,
       "img": "../img/Agregadas-recientemente/your name.jpg",
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "titulo": "Toda una vida en un año",
+      "titulo": "The Avengers - Infinity war",
       "categoria": "Romance",
       "año": 2020,
       "img": "../img/Agregadas-recientemente/Toda una vida en un año.jpg",
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "titulo": "Rojo, blanco y sangre azul",
+      "titulo": "Spider Man - No whay home",
       "categoria": "Romance",
       "año": 2023,
       "img": "../img/Agregadas-recientemente/Rojo-blanco y sangre azul.jpg",
@@ -110,7 +110,7 @@
     },
     {
       "id": 13,
-      "titulo": "El origen",
+      "titulo": "Bohemian - Rhapsody",
       "categoria": "Drama",
       "año": 2010,
       "img": "../img/Accion/El origen.jpg",
@@ -119,7 +119,7 @@
     },
     {
       "id": 14,
-      "titulo": "El club de la lucha",
+      "titulo": "Mad Max - Fury Road",
       "categoria": "Drama",
       "año": 1999,
       "img": "../img/Accion/El club de la lucha.jpg",
@@ -128,7 +128,7 @@
     },
     {
       "id": 15,
-      "titulo": "El imperio contraataca",
+      "titulo": "Wanda Vision",
       "categoria": "Drama",
       "año": 1980,
       "img": "../img/Accion/El imperio contraataca.jpg",

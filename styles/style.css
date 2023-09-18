@@ -514,7 +514,35 @@ button, .btn-buscar:hover {
   transition: 0.5s;
 }
 
-/* button, .btn-buscar:hover {
-  color: #8a8a8a;
-  transition: 0.5s;
+.img-redessociales > img {
+  width: 40px;
+  height: 40px;
+}
+
+/* .pelicula-principal {
+  position: absolute;
+  width: 2000px;
 } */
+
+@media screen and (max-width: 768px) {
+  .contNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+}
+
+.contNosotros {
+  display: flex;
+  position: relative;
+  top: 90px;
+  margin-bottom: 100px;
+}
