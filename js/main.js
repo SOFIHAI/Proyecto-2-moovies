@@ -1,8 +1,6 @@
 import myFooter from '../components/footer.js';
 import navbar from '../components/navbar.js';
 import { obtenerInformacion } from "./utils.js";
-import { cargarPeliculas } from './detalles.js';
-
 
 
 
@@ -15,13 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 let contenedor = document.getElementById("contendorPeliculas");
 
-
-
 let infoPeliculas = await obtenerInformacion();
-
 
 
 infoPeliculas?.peliculas?.map(pelicula => {

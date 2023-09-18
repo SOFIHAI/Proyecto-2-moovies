@@ -1,10 +1,6 @@
 import { users } from './users.js';
 import { messages, getFormData } from './utils.js';
-import myFooter from '../components/footer.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  myFooter();
-});
 
 const createUser = async (body) => {
   try {
