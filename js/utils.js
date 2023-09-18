@@ -38,6 +38,22 @@ async function obtenerInformacion  () {
   return informacion;
   } 
   
+  async function obtenerPeliculas  () {
+    
+    let informacion = await fetch('../dataBase/db.json')
+    .then(response => response.json())
+    .then(data => {
+        return data 
+    })
+    .catch(error => {
+      console.error('Error al cargar el archivo JSON:', error);
+    });
+    
+    return informacion.peliculas;
+    } 
+    
   export  {
     obtenerInformacion,
+    obtenerPeliculas
   }
+
