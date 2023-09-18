@@ -37,7 +37,7 @@ const navbar = () => {
               </li>`
               : `
               <li class="nav-item">
-                <a class="nav-link text-white" href="../login.html">Login</a>
+                <a class="nav-link text-white" href="../js/login.js">Login</a>
               </li>
           `
           }
