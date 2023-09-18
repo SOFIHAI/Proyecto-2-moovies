@@ -512,7 +512,7 @@ button, .btn-buscar:hover {
   transition: 0.5s;
 }
 
-/* button, .btn-buscar:hover {
-  color: #8a8a8a;
-  transition: 0.5s;
-} */
+.img-redessociales > img {
+  width: 40px;
+  height: 40px;
+}

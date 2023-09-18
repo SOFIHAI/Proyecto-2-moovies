@@ -34,21 +34,17 @@ const myFooter = () => {
       <p class="h5">Redes Sociales</p>
       <ul>
         <li>
-          <a href="../error404.html"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="./error404.html" class="img-redessociales"><img src="./img/Redes-sociales/facebook.png" alt="Logo3" width="80" height="80" class="rounded-circle" />
+      </a>
         </li>
+        <a href="./error404.html" class="img-redessociales"><img src="./img/Redes-sociales/youtube.png" alt="Logo3" width="80" height="80" class="rounded-circle" />
         <li>
-          <a href="../error404.html"><i class="bi bi-twitter"></i> Twitter</a>
-        </li>
-        <li>
-          <a href=""><i class="bi bi-instagram"></i> Instagram</a>
-        </li>
-        <li>
-          <a href="../error404.html"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="./error404.html" class="img-redessociales"><img src="./img/Redes-sociales/instagram.png" alt="Logo3" width="80" height="80" class="rounded-circle" />
         </li>
       </ul>
     </aside>
   </article>
-  <article class="row " id="copyrightFooter">
+  <article class="row text-white" id="copyrightFooter">
     <p class="h6 text-center">&copy; 2023 Grupo 2. Todos los derechos reservados.</p>
   </article>
 </section>`);
