@@ -10,7 +10,7 @@ const navbar = () => {
             <div class="form-group form-input-fields form-group-lg has-feedback container-fluid d-flex flex-row justify-content-center align-items-center mt-3">
               
               <div class="input-group">
-                <input type="text" class="form-control fs-5 input-search" name="q" id="buscar" placeholder="Buscar">
+                <input type="text" class="form-control fs-5 input-search" name="q" id="buscar" placeholder="">
               </div>
               <button type="submit" class="btn-buscar btn btn-secondary mx-2 fs-5 fw-semibold">Buscar</button>
             </div>

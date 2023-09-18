@@ -22,14 +22,21 @@ function updateDetalle(id) {
   <div class="img-detalle">
       <img src="${resultado.img}" class="img-main img-fluid m-5" alt="detail">
   </div>
-  <div class="descripcion-detalle container-fluid d-flex flex-column justify-content-start align-items-center text-wrap">
+  <div class="descripcion-detalle d-flex flex-column align-items-center text-wrap">
       <h2 class="text-white fw-bold fs-5  tituloPelicula">${resultado.titulo}</h2>
       <h3 class="text-white fs-2  mb-5">${resultado.año}</h3>
-      <p class="sinopsis text-white">Sinopsis: ${resultado.sinopsis}
+      <p class="sinopsis text-white ">Sinopsis: ${resultado.sinopsis}
       </p>
   </div>
 </div>
   `;
+}
+
+
+
+window.onload = function () {
+   
+  cargardetalle();
 }
 
 

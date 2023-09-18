@@ -1,77 +1,167 @@
-//Altas, bajas y modificaciones
+import myFooter from '../components/footer.js';
+import navbar from '../components/navbar.js';
+import { generarID, limpiarInputs, obtenerPeliculas, validarPelicula } from './utils.js';
 
-let indice = -1;
-let accion = "A";
-let tareas = localStorage.getItem("tareas");
-tareas=JSON.parse(tareas);
-if(tareas==null) tareas = [];
-//
-function lista(){
+let formAdmin = document.getElementById("formAdministracion");
+let pelicula = await obtenerPeliculas();
+let isUpdate = false; 
+let peliculas = localStorage.getItem("peliculas") ? JSON.parse(localStorage.getItem("peliculas")) : pelicula;
+
+function lista() {
+  
   document.getElementById("listado").innerHTML = "tabla";
-  let tabla = "<tr><th>nombre</th><th>descripcion</th><th>duracion</th><th>sinopsis</th><th>Borrar</th><th>Editar</th><th>estrella</th></tr>";
-  for(let i in tareas){
-    let tarea = JSON.parse(tareas[i]);
-    tabla += "<tr><td>"+tarea.nombre+"</td>";
-    tabla += "<td>"+tarea.descripcion+"</td>";
-    tabla += "<td>"+tarea.duracion+"</td>";
-    tabla += "<td>"+tarea.sinopsis+"</td>";
-    tabla += "<td><button type='button' class='btn btn-danger' onClick='borra("+i+")'><i class='fa fa-close'></i> Borrar</button></td>";
-    tabla += "<td><button type='button' class='btn btn-warning' onClick='edita("+i+")'><i class='fa fa-edit'></i> Modificar</button></td>";
-    tabla += "<td><button type='button' class='btn btn-warning' onClick='modificar("+i+")'><i class='fa fa-edit'></i> ★</button></td>";
-    tabla += "</tr>";
-  }
-  document.getElementById("listado").innerHTML = tabla;
+  let tabla = "<tr><th>Imagen</th><th>Titulo</th><th>Categoria</th><th>Año</th><th>sinopsis</th><th>Borrar</th><th>Editar</th><th>Favorito</th></tr>";
+
+  peliculas?.map(pelicula => {
+    if(pelicula.estado == true){
+      tabla += "<tr><td><img  src=" + "" + pelicula.img + "/></td>";
+      tabla += "<td>" + pelicula.titulo + "</td>";
+      tabla += "<td>" + pelicula.categoria + "</td>";
+      tabla += "<td>" + pelicula.año + "</td>";
+      tabla += "<td>" + pelicula.sinopsis + "</td>";
+      tabla += "<td><button type='button' class='btn btn-danger btnEliminar' id = " + ''+  pelicula.id + " ><i class='fa fa-close'></i> Borrar</button></td>";
+      tabla += "<td><button type='button' class='btn btn-warning btnModificar' id = " + ''+ pelicula.id + " ><i class='fa fa-edit'></i> Modificar</button></td>";
+      tabla += "<td><button type='button' class='btn btn-success btnPublicado' id = " + '' + pelicula.id + " ><i class='fa fa-edit'></i> ★</button></td>";
+      tabla += "</tr>";
+      document.getElementById("listado").innerHTML = tabla;
+    }
+  })
+  eliminarPelicula();
+  publicarPelicula(); 
+  modificarPelicula(); 
 }
-function alta(){
-  let nombre = document.getElementById("nombre").value;
-  let descripcion = document.getElementById("descripcion").value;
-  let duracion = document.getElementById("duracion").value;
-  let sinopsis = document.getElementById("sinopsis").value;
-  //
-  let tarea = JSON.stringify({
-    nombre:nombre,
-    descripcion:descripcion,
-    duracion:duracion,
-    sinopsis:sinopsis,
+
+formAdmin.addEventListener("submit",validarFormulario);
+
+function validarFormulario(event){
+  if (!formAdmin.checkValidity()) {
+    event.preventDefault();
+    event.stopPropagation();
+    formAdmin.classList.add('was-validated');
+  } else{
+    event.preventDefault();
+    event.stopPropagation();
+    altaModificacion(); 
+    limpiarInputs(); 
+  }
+}
+function altaModificacion() {
+  let titulo = document.getElementById("titulo").value,
+    categoria = document.getElementById("categoria").value,
+    año = document.getElementById("anio").value,
+    sinopsis = document.getElementById("sinopsis").value,
+    img = document.getElementById("imagen").value;
+if(!isUpdate){
+  let nuevaPelicula = {
+    id: generarID(),
+    titulo: titulo,
+    categoria: categoria,
+    año: año,
+    sinopsis: sinopsis,
+    img: img,
+    estado: true,
+    publicado: true
+  };
+  let respuesta = validarPelicula(nuevaPelicula);
+
+  if(respuesta) return alert(respuesta); 
+  let peliculaExistente = peliculas?.find(pelicula => pelicula.titulo  == titulo); 
+  if(peliculaExistente) return alert("Pelicula ya creada!"); 
+  peliculas?.push(nuevaPelicula); 
+  alert("Pelicula creada"); 
+  localStorage.setItem("peliculas", JSON.stringify(pelicula));
+  lista();
+}else{
+  let idModificado = localStorage.getItem("idModificacion"); 
+  let updatePeliculas = peliculas?.map(pelicula => {
+    if(pelicula.id == idModificado){
+      pelicula.titulo = titulo;
+      pelicula.categoria = categoria; 
+      pelicula.año = año;
+      pelicula.sinopsis = sinopsis; 
+      pelicula.img = img; 
+    }
+    return pelicula; 
+  })
+  localStorage.setItem("peliculas", JSON.stringify(updatePeliculas));
+  localStorage.removeItem("idModificacion");
+  alert("Pelicula Modifica!"); 
+  lista();
+}
+
+}
+
+function eliminarPelicula() {
+  let btnEliminar = document.getElementsByClassName('btnEliminar'); 
+  Array.from(btnEliminar).forEach(function (button) {
+    button.addEventListener('click', function () {
+      borrarPelicula(button.id);
+    });
   });
-  //añadir al objeto JSON
-  if(accion=="A"){
-    tareas.push(tarea);
-    localStorage.setItem("pelicula", JSON.stringify(tareas));
-    alert("Tarea añadida existosamente");
-  } else {
-    tareas[indice]= tarea;
-    localStorage.setItem("tareas", JSON.stringify(tareas));
-    alert("Tarea modificada existosamente");
+}
+
+function borrarPelicula(id) {
+  let respuesta = confirm("¿Desea eliminar la pelicula seleccionada?");
+  if(respuesta){
+    let updatePeliculas = peliculas?.map(pelicula => {
+      if(pelicula.id == id){
+        pelicula.estado = false; 
+      }
+      return pelicula;
+    })
+    localStorage.setItem("peliculas", JSON.stringify(updatePeliculas)); 
+    lista(); 
+  }else{
+    window.location.reload(); 
   }
-  lista();
-  document.getElementById("nombre").value = "nombre";
-  document.getElementById("descripcion").value = "descripcion";
-  document.getElementById("duracion").value = "duracion";
-  document.getElementById("sinopsis").value = "sinopsis";
-  return true;
 }
-function borra(i){
-  indice = i;
-  let tarea = JSON.parse(tareas[indice]);
-  let nombre = tarea.nombre;
-  if(confirm("¿Desea borrar la pelicula '"+nombre+"'?")){
-    tareas.splice(indice,1);
-    localStorage.setItem("tareas", JSON.stringify(tareas));
-    alert("La pelicula"+nombre+"' ha sido eliminada");
+function publicarPelicula() {
+  let btnPublicado = document.getElementsByClassName('btnPublicado'); 
+  Array.from(btnPublicado).forEach(function (button) {
+    button.addEventListener('click', function () {
+      cambiarPublicado(button.id);
+    });
+  });
+}
+function cambiarPublicado(id) {
+  let respuesta = confirm("¿Desea cambiar el publicado de la pelicula seleccionada?");
+  if(respuesta){
+    debugger
+    let updatePeliculas = peliculas?.map(pelicula => {
+      if(pelicula.id == id){
+        pelicula.publicado = pelicula.publicado ? false : true; 
+      }
+      return pelicula;
+    })
+    localStorage.setItem("peliculas", JSON.stringify(updatePeliculas)); 
+    lista(); 
+  }else{
+    window.location.reload(); 
   }
+}
+function modificarPelicula () {
+  let btnModificar = document.getElementsByClassName('btnModificar'); 
+  Array.from(btnModificar).forEach(function (button) {
+    button.addEventListener('click', function () {
+      editarPelicula(button.id);
+    });
+  });
+}
+
+function editarPelicula(id) {
+  let peliculaEncontrada = peliculas?.find(pelicula => pelicula.id == id); 
+  if(peliculaEncontrada){
+    document.getElementById("titulo").value = peliculaEncontrada.titulo; 
+    document.getElementById("categoria").value = peliculaEncontrada.categoria; 
+    document.getElementById("anio").value = peliculaEncontrada.año; 
+    document.getElementById("sinopsis").value = peliculaEncontrada.sinopsis; 
+    document.getElementById("imagen").value = peliculaEncontrada.img;
+    isUpdate = true; 
+    localStorage.setItem("idModificacion" , id); 
+  }
+}
+window.onload = function () {
   lista();
+  navbar();
+  myFooter(); 
 }
-function edita(i){
-  indice = i;
-  accion = "E";
-  let tarea = JSON.parse(tareas[indice]);
-  document.getElementById("nombre").value = tarea.nombre;
-  document.getElementById("descripcion").value = tarea.descripcion;
-  document.getElementById("duracion").value = tarea.duracion;
-  document.getElementById("sinopsis").value = tarea.sinopsis;
-}
-window.onload = function(){
-  lista();
-}
- 

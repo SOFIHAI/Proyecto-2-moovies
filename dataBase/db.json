@@ -7,7 +7,8 @@
       "año": 1988,
       "img": "../img/películas_destacadas/cinema paradiso.jpg",
       "sinopsis": "Salvatore es un niño de un pueblecito italiano, donde el único pasatiempo es ir al cine. Totalmente nublado por la magia de las películas, Slavatore crece creyendo que el cine es magia. Salvatore se hace mayor y debe buscarse la vida fuera de su pueblo, pero años después recibe un mensaje en el que le comunican que debe de volver a casa.",
-      "codigo": "A9jyLo67E"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "año": 1972,
       "img": "../img/películas_destacadas/el padrino.jpg",
       "sinopsis": "Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo, intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes.",
-      "codigo": "E9jyLo27E"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "año": 2008,
       "img": "../img/películas_destacadas/elcaballero-oscuro.jpg",
       "sinopsis": "Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
-      "codigo": "K8jyKo17A"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "año": 2004,
       "img": "../img/películas_destacadas/elseñor de los anillos.jpg",
       "sinopsis": "En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.",
-      "codigo": "O2jyUo117"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "año": 2014,
       "img": "../img/películas_destacadas/interestelar.jpg",
       "sinopsis": "Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí. La Tierra está llegando a su fin y este grupo necesita encontrar un planeta más allá de nuestra galaxia que garantice el futuro de la raza humana.",
-      "codigo": "P2lyBo367"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "año": 2019,
       "img": "../img/películas_destacadas/joker.jpg",
       "sinopsis": "La pasión de Arthur Fleck, un hombre ignorado por la sociedad, es hacer reír a la gente. Sin embargo, una serie de trágicos sucesos harán que su visión del mundo se distorsione considerablemente convirtiéndolo en un brillante criminal.",
-      "codigo": "G1JyBo857"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "año": 1997,
       "img": "../img/películas_destacadas/la vida es bella.jpg",
       "sinopsis": "En 1939, a punto de estallar la Segunda Guerra Mundial, Guido llega a Arezzo con la intención de abrir una librería. Allí conoce a Dora y, a pesar de que está prometida con el fascista Rodolfo, acaba casándose con ella y tienen un hijo. Poco después de estallar la guerra, las tropas nazis llegan a Italia y los tres son internados en un campo de concentración. Allí, Guido construye una elaborada fantasía para proteger a su hijo y hacerle creer que la situación es tan solo un juego.",
-      "codigo": "HbRyBo013"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "año": 1990,
       "img": "../img/películas_destacadas/uno de los nuestros.jpg",
       "sinopsis": "Henry, un niño de trece años de Brooklyn, vive fascinado con el mundo de los gángsters. Su sueño se hace realidad cuando entra en la familia Pauline.",
-      "codigo": "NiRyJo846"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "año": 2019,
       "img": "../img/películas_destacadas/parasitos.jpg",
       "sinopsis": "Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a recibir clases particulares en la adinerada casa de Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, comienzan una relación de resultados imprevisibles.",
-      "codigo": "hRVyBo67f"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "año": 2016,
       "img": "../img/Agregadas-recientemente/your name.jpg",
       "sinopsis": "Taki y Mitsuha descubren un día que durante el sueño sus cuerpos se intercambian, y comienzan a comunicarse por medio de notas. A medida que consiguen superar torpemente un reto tras otro, se va creando entre los dos un vínculo que poco a poco se convierte en algo más romántico",
-      "codigo": "CbRnBoF75"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "año": 2020,
       "img": "../img/Agregadas-recientemente/Toda una vida en un año.jpg",
       "sinopsis": "Daryn, de 17 años, se entera de que su novia se está muriendo y se propone brindarle las experiencias de toda una vida en el año que le queda por vivir.",
-      "codigo": "MiDyBo496"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "año": 2023,
       "img": "../img/Agregadas-recientemente/Rojo-blanco y sangre azul.jpg",
       "sinopsis": "Alex Claremont-Diaz es el hijo de la primera mujer presidenta de Estados Unidos. Durante una visita al Reino Unido, tiene un altercado con Henry, un príncipe británico. Alex y Henry tienen que fingir ser amigos para evitar una crisis diplomática, pero esa tregua desencadena algo más profundo.",
-      "codigo": "BuRyLo360"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "año": 2010,
       "img": "../img/Accion/El origen.jpg",
       "sinopsis": "Dom Cobb es un ladrón capaz de adentrarse en los sueños de la gente y hacerse con sus secretos. Sin embargo, ahora tiene que llevar a cabo una misión diferente a lo que ha hecho siempre: realizar una incepción para implantar una idea en el subconsciente de una persona. El plan se complica debido a la intervención de alguien que parece predecir cada uno de los movimientos de Cobb, alguien a quien solo él puede enfrentarse.",
-      "codigo": "ZbRyB571"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "año": 1999,
       "img": "../img/Accion/El club de la lucha.jpg",
       "sinopsis": "Un empleado de oficina insomne en busca de una manera de cambiar su vida se cruza con un vendedor y crean un club de lucha clandestino como forma de terapia.",
-      "codigo": "uBeyBo641"
+      "estado": true,
+     "publicado": true
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "año": 1980,
       "img": "../img/Accion/El imperio contraataca.jpg",
       "sinopsis": "Son tiempos adversos para la rebelión. Aunque la Estrella de la Muerte ha sido destruida, las tropas imperiales han hecho salir a las fuerzas rebeldes de sus bases ocultas y los persiguen a través de la galaxia. Tras escapar de la terrible Flota Imperial, un grupo de guerreros de la libertad, encabezados por Luke Skywalker, ha establecido una nueva base secreta en el remonto mundo helado de Hoth.",
-      "codigo": "OjVyBo641"
+      "estado": true,
+     "publicado": true
     }
   ],
   "users": [
