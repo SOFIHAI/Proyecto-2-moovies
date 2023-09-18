@@ -1,8 +1,7 @@
-const footer = document.querySelector('footer');
+const footer = document.querySelector("footer");
 
 const myFooter = () => {
-  
-  const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
+  const user = JSON.parse(localStorage.getItem("userLog")) || undefined;
   return (footer.innerHTML = `<section class="container-fluid p-3 mt-5 footer ">
   <article class="row justify-content-between" id="cuerpoFooter">
     <aside class="col-xl-3 col-sm-3 col-md-3">

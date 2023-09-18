@@ -1,7 +1,7 @@
-const header = document.querySelector('header');
+const header = document.querySelector("header");
 
 const navbar = () => {
-  const user = JSON.parse(localStorage.getItem('userLog')) || undefined;
+  const user = JSON.parse(localStorage.getItem("userLog")) || undefined;
   return (header.innerHTML = `
   <nav class="navbar navbar-expand-lg fixed-top fw-bold p-2">
   <div class="section-main">
@@ -43,7 +43,7 @@ const navbar = () => {
           }
           ${
             user
-              ? ''
+              ? ""
               : `
             <li class="nav-item">
               <a class="nav-link text-white" href="../register.html">Register</a>
@@ -51,22 +51,22 @@ const navbar = () => {
           `
           }
           ${
-            user?.role === 'ADMIN'
+            user?.role === "ADMIN"
               ? `
               <li class="nav-item">
                 <a class="nav-link text-white" href="../administrarMovies.html">Panel de Admin.</a>
               </li>
               `
-              : ''
+              : ""
           }
           ${
-            user?.role === 'USER'
+            user?.role === "USER"
               ? `
               <li class="nav-item">
                 <a class="nav-link text-white" href="../index.html">MIS PELIS</a>
               </li>
               `
-              : ''
+              : ""
           }
           ${
             user
@@ -75,7 +75,7 @@ const navbar = () => {
                 <button class="btn text-white justify-content-md-end" id='closeSession' onclick='localStorage.clear(), window.location.reload()'>CERRAR SESION</button>
               </li>
               `
-              : ''
+              : ""
           }
         </ul>
       </div>

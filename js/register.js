@@ -1,18 +1,17 @@
-import { users } from './users.js';
-import { messages, getFormData } from './utils.js';
-
+import { users } from "./users.js";
+import { messages, getFormData } from "./utils.js";
 
 const createUser = async (body) => {
   try {
-    const resp = await fetch('http://localhost:3000/users', {
-      method: 'POST',
+    const resp = await fetch("http://localhost:3000/users", {
+      method: "POST",
       body: JSON.stringify(body),
       headers: {
-        'Content-type': 'application/json; charset=UTF-8',
+        "Content-type": "application/json; charset=UTF-8",
       },
     });
     const data = await resp.json();
-    window.location.href = './login.html';
+    window.location.href = "./login.html";
   } catch (error) {
     console.log(error);
   }
@@ -21,12 +20,10 @@ const createUser = async (body) => {
 const userRegister = (e) => {
   e.preventDefault();
 
-  const messageElement = document.getElementById('message');
-  messageElement.textContent = '';
-
+  const messageElement = document.getElementById("message");
+  messageElement.textContent = "";
 
   const formData = getFormData(e);
-
 
   const validationEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
   const validationPassword = /^(?=.*\d).{4,8}$/;
@@ -56,5 +53,5 @@ const userRegister = (e) => {
   }
 };
 
-const formRegister = document.getElementById('registerForm');
-formRegister.addEventListener('submit', userRegister, false);
+const formRegister = document.getElementById("registerForm");
+formRegister.addEventListener("submit", userRegister, false);
