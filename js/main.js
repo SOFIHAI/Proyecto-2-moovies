@@ -2,7 +2,6 @@ import myFooter from '../components/footer.js';
 import navbar from '../components/navbar.js';
 import { obtenerInformacion} from "./utils.js";
 
-
 document.addEventListener('DOMContentLoaded', () => {
   navbar();
 });
@@ -23,7 +22,7 @@ infoPeliculas?.peliculas?.map(pelicula => {
   div.id = "cards-1";
   div.innerHTML = `
   <div class="contenedorImgPelicula id="detales">
-  <img src="${pelicula.img}" alt="peliculas" class="h-100 w-100">
+  <img src="${pelicula.img}" alt="" class="h-100 w-100">
   
 </div>
 <h5 class="mt-5 text-white">${pelicula.titulo}</h5>

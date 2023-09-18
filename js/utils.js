@@ -1,3 +1,7 @@
+const ExpRegTitulo = /^[\w\s():\-?!¡¿áéíóúÁÉÍÓÚüÜñÑ"]+$/i,
+    ExpRegURL = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/,
+    ExpRegTexto = /^[\x00-\xFF]*$/;
+
 export const messages = {
   passwordRequirements:
     'La contraseña debe tener entre 4 y 8 dígitos e incluir al menos un dígito numérico.',
@@ -52,8 +56,35 @@ async function obtenerInformacion  () {
     return informacion.peliculas;
     } 
     
+    function validarPelicula(pelicula) {
+      if (pelicula.titulo.length == 1 || pelicula.titulo.match(ExpRegTitulo) == null) return "Ingrese un Título correcta de la Película!";
+      if (pelicula.categoria.length == 1 || pelicula.categoria.match(ExpRegTitulo) == null) return "Ingrese una categoría correcta de la Película!";
+      if (pelicula.sinopsis.length == 1 || pelicula.sinopsis.match(ExpRegTexto) == null) return "Ingrese una sinopsis correcta de la Película!";
+      if (pelicula.img.length == 1 || pelicula.img.match(ExpRegURL) == null) return "Ingrese una URL de imagen correcta de la Película!";
+      return null;
+  }
+  function generarID() {
+    var id = "";
+    var str =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789";
+    for (let i = 1; i <= 8; i++) {
+        var char = Math.floor(Math.random() * str.length + 1);
+        id += str.charAt(char);
+    }
+    return id;
+}
+function limpiarInputs() {
+   document.getElementById("titulo").value = ""; 
+  document.getElementById("categoria").value =""; 
+   document.getElementById("anio").value =""; 
+    document.getElementById("sinopsis").value =""; 
+  document.getElementById("imagen").value ="";
+}
   export  {
     obtenerInformacion,
-    obtenerPeliculas
+    obtenerPeliculas,
+    validarPelicula,
+    generarID, 
+    limpiarInputs
   }
 
