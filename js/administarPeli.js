@@ -1,11 +1,6 @@
 import myFooter from "../components/footer.js";
 import navbar from "../components/navbar.js";
-import {
-  generarID,
-  limpiarInputs,
-  obtenerPeliculas,
-  validarPelicula,
-} from "./utils.js";
+import {generarID, limpiarInputs, obtenerPeliculas, validarPelicula} from "./utils.js";
 
 let formAdmin = document.getElementById("formAdministracion");
 let pelicula = await obtenerPeliculas();
