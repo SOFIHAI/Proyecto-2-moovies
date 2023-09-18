@@ -60,6 +60,7 @@ body {
   margin-right: 1.25em;
 }
 
+
 .pelicula-principal .boton {
   background: rgba(0, 0, 0, 0.5);
   border: none;
@@ -85,7 +86,8 @@ body {
   margin-right: 1.25em;
 }
 
-.cards-principal {
+
+.pelicula-principal.cards-principal {
   background-color: rgba(7,7,9,1);
 }
 

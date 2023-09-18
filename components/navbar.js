@@ -8,7 +8,7 @@ const navbar = () => {
         <div class="container-fluid d-flex justify-content-end align-items-center">
           <form action="" class="form-main form-inline nofloat-xs pull-right pull-left-sm">
             <div class="form-group form-input-fields form-group-lg has-feedback container-fluid d-flex flex-row justify-content-center align-items-center mt-3">
-              <label class="sr-only" for="search">Search</label>
+              
               <div class="input-group">
                 <input type="text" class="form-control fs-5 input-search" name="q" id="buscar" placeholder="Buscar">
               </div>
