@@ -29,7 +29,6 @@ const navbar = () => {
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
           </li>
-          
           ${
             user
               ? `

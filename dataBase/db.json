@@ -208,6 +208,14 @@
       "passwordCheck": "eee123",
       "date": "2023-09-18T02:51:11.322Z",
       "id": 9
+    },
+    {
+      "email": "franco@gmail.com",
+      "userName": "franco",
+      "password": "sss123",
+      "passwordCheck": "sss123",
+      "date": "2023-09-18T12:04:51.743Z",
+      "id": 10
     }
   ]
 }
